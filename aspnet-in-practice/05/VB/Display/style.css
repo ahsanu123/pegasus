@@ -1,0 +1,29 @@
+﻿.customer
+{
+	background: #f0f0f0;
+	border: 2px solid gray;
+	padding: 4px;
+	margin: 8px;
+	height: 45px;
+	widht: 250px;
+	font-size: 18px;
+}
+
+.sortedAsc
+{
+	background: transparent url(asc.gif) right center no-repeat;
+}
+
+.sortedDesc
+{
+	background: transparent  url(desc.gif) right center no-repeat;
+}
+
+.sortdeCellAsc 
+{
+	background:yellow;
+}
+.sortedCellDesc 
+{
+	background:orange;
+}

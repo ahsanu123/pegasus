@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentMigrator.Extensions.Snowflake</name>
+    </assembly>
+    <members>
+        <member name="M:FluentMigrator.Snowflake.SnowflakeExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},System.Int32,System.Int32)">
+            <summary>
+            Makes a column an Identity column using the specified seed and increment values.
+            </summary>
+            <param name="expression">Column on which to apply the identity.</param>
+            <param name="seed">Starting value of the identity.</param>
+            <param name="increment">Increment value of the identity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FluentMigrator.Snowflake.SnowflakeExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},System.Int64,System.Int32)">
+            <summary>
+            Makes a column an Identity column using the specified seed and increment values with bigint support.
+            </summary>
+            <param name="expression">Column on which to apply the identity.</param>
+            <param name="seed">Starting value of the identity.</param>
+            <param name="increment">Increment value of the identity.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

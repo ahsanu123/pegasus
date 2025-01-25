@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls.Web", "CustomControls.Web\CustomControls.Web.csproj", "{4C5B4B48-492A-4FA8-A2F1-A0AB49F0DF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls.Composite", "CustomControls.Composite\CustomControls.Composite.csproj", "{D3372E69-EA91-457F-A181-03A905F8DC25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls.Databinding", "CustomControls.Databinding\CustomControls.Databinding.csproj", "{083E9BAE-9F8D-41DA-9451-D4D398DDD1CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls.ControlBuilders", "CustomControls.ControlBuilders\CustomControls.ControlBuilders.csproj", "{D8B73E1A-B538-48D5-AFEF-BC6B24850314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls.Templated", "CustomControls.Templated\CustomControls.Templated.csproj", "{F4D11FF8-02E4-484C-AE1D-DC43B56A1CA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C5B4B48-492A-4FA8-A2F1-A0AB49F0DF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5B4B48-492A-4FA8-A2F1-A0AB49F0DF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5B4B48-492A-4FA8-A2F1-A0AB49F0DF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5B4B48-492A-4FA8-A2F1-A0AB49F0DF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3372E69-EA91-457F-A181-03A905F8DC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3372E69-EA91-457F-A181-03A905F8DC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3372E69-EA91-457F-A181-03A905F8DC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3372E69-EA91-457F-A181-03A905F8DC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{083E9BAE-9F8D-41DA-9451-D4D398DDD1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083E9BAE-9F8D-41DA-9451-D4D398DDD1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083E9BAE-9F8D-41DA-9451-D4D398DDD1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083E9BAE-9F8D-41DA-9451-D4D398DDD1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B73E1A-B538-48D5-AFEF-BC6B24850314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B73E1A-B538-48D5-AFEF-BC6B24850314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B73E1A-B538-48D5-AFEF-BC6B24850314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B73E1A-B538-48D5-AFEF-BC6B24850314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D11FF8-02E4-484C-AE1D-DC43B56A1CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D11FF8-02E4-484C-AE1D-DC43B56A1CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D11FF8-02E4-484C-AE1D-DC43B56A1CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D11FF8-02E4-484C-AE1D-DC43B56A1CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

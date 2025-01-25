@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentMigrator.Runner</name>
+    </assembly>
+    <members>
+        <member name="M:FluentMigrator.Runner.FluentMigrationRunnerBuilderExtensions.AddAllDatabases(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Add all database services to the migration runner
+            </summary>
+            <param name="builder">The migration runner builder</param>
+            <returns>The migration runner builder</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentMigrator.Extensions.MySql</name>
+    </assembly>
+    <members>
+        <member name="M:FluentMigrator.Builder.Create.Index.AbstractCreateIndexMethodOptionsSyntax.Unique">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Builder.Create.Index.AbstractCreateIndexMethodOptionsSyntax.NonClustered">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Builder.Create.Index.AbstractCreateIndexMethodOptionsSyntax.Clustered">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Builder.Create.Index.CreateBTreeIndexOptionsSyntax.#ctor(FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Builder.Create.Index.CreateHashIndexOptionSyntax.#ctor(FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax)">
+            <inheritdoc />
+        </member>
+        <member name="T:FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax">
+            <summary>
+            B-tree index options
+            </summary>
+        </member>
+        <member name="T:FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax">
+            <summary>
+            B-tree index options
+            </summary>
+        </member>
+        <member name="T:FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax">
+            <summary>
+            B-tree index options
+            </summary>
+        </member>
+        <member name="T:FluentMigrator.MySql.MySqlExtensions">
+            <summary>
+            Feature extensions for MySql
+            </summary>
+        </member>
+    </members>
+</doc>

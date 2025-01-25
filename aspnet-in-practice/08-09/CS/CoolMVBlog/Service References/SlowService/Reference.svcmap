@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1ec415fa-a58f-425d-b84e-2149f834bdb4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:13993/VerySlowService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VerySlowService.wsdl" MetadataType="Wsdl" ID="261fa492-81dd-42f4-af21-a807f5686adf" SourceId="1" SourceUrl="http://localhost:13993/VerySlowService.svc?wsdl" />
+    <MetadataFile FileName="VerySlowService.xsd" MetadataType="Schema" ID="38f798e3-fbca-450a-acde-af2bfef02af6" SourceId="1" SourceUrl="http://localhost:13993/VerySlowService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VerySlowService1.xsd" MetadataType="Schema" ID="b61543bd-8c9f-46e1-9ec1-88c3cface444" SourceId="1" SourceUrl="http://localhost:13993/VerySlowService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VerySlowService.disco" MetadataType="Disco" ID="b62c5908-e239-4aa6-a2d2-37da60f522d8" SourceId="1" SourceUrl="http://localhost:13993/VerySlowService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

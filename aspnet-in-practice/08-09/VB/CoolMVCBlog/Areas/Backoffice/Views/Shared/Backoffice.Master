@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/Site.Master" %>
+<asp:Content runat="server" ID="head" ContentPlaceHolderID="Head">
+    <script src="/Scripts/jquery-1.4.1.js" type="text/javascript" />
+    <script src="/Scripts/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <link href="/Content/jquery-ui-1.8.2.custom.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+<asp:Content runat="server" ID="mainContent" ContentPlaceHolderID="mainContent">
+<script type="text/javascript">
+    $(function () {
+        $.datepicker.setDefaults($.datepicker.regional['it']);
+        $('.dateInput').datepicker();
+    });
+</script>
+<div class="content">
+    <h2>Welcome to CoolMVCBlog's back office</h2>
+    <asp:ContentPlaceHolder runat="server" ID="mainBOContent" />
+</div>
+</asp:Content>

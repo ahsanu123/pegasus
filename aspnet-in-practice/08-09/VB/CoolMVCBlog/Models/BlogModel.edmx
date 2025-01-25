@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CoolMvcBlogModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="CoolMvcBlogModelStoreContainer">
+          <EntitySet Name="AuthorSet" EntityType="CoolMvcBlogModel.Store.AuthorSet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategorySet" EntityType="CoolMvcBlogModel.Store.CategorySet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Comments" EntityType="CoolMvcBlogModel.Store.Comments" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PostCategory" EntityType="CoolMvcBlogModel.Store.PostCategory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PostSet" EntityType="CoolMvcBlogModel.Store.PostSet" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Comments_Posts" Association="CoolMvcBlogModel.Store.FK_Comments_Posts">
+            <End Role="PostSet" EntitySet="PostSet" />
+            <End Role="Comments" EntitySet="Comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostAuthor" Association="CoolMvcBlogModel.Store.FK_PostAuthor">
+            <End Role="AuthorSet" EntitySet="AuthorSet" />
+            <End Role="PostSet" EntitySet="PostSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostCategory_Category" Association="CoolMvcBlogModel.Store.FK_PostCategory_Category">
+            <End Role="CategorySet" EntitySet="CategorySet" />
+            <End Role="PostCategory" EntitySet="PostCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostCategory_Post" Association="CoolMvcBlogModel.Store.FK_PostCategory_Post">
+            <End Role="PostSet" EntitySet="PostSet" />
+            <End Role="PostCategory" EntitySet="PostCategory" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AuthorSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CategorySet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Comments">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Author" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="WebSite" Type="nvarchar(max)" />
+          <Property Name="Text" Type="ntext" Nullable="false" />
+          <Property Name="PostId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PostCategory">
+          <Key>
+            <PropertyRef Name="PostCategory_Category_Id" />
+            <PropertyRef Name="Categories_Id" />
+          </Key>
+          <Property Name="PostCategory_Category_Id" Type="int" Nullable="false" />
+          <Property Name="Categories_Id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PostSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AuthorId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Text" Type="ntext" Nullable="false" />
+          <Property Name="DatePublished" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Comments_Posts">
+          <End Role="PostSet" Type="CoolMvcBlogModel.Store.PostSet" Multiplicity="1" />
+          <End Role="Comments" Type="CoolMvcBlogModel.Store.Comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Comments">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostAuthor">
+          <End Role="AuthorSet" Type="CoolMvcBlogModel.Store.AuthorSet" Multiplicity="1" />
+          <End Role="PostSet" Type="CoolMvcBlogModel.Store.PostSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AuthorSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostSet">
+              <PropertyRef Name="AuthorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostCategory_Category">
+          <End Role="CategorySet" Type="CoolMvcBlogModel.Store.CategorySet" Multiplicity="1" />
+          <End Role="PostCategory" Type="CoolMvcBlogModel.Store.PostCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategorySet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostCategory">
+              <PropertyRef Name="Categories_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostCategory_Post">
+          <End Role="PostSet" Type="CoolMvcBlogModel.Store.PostSet" Multiplicity="1" />
+          <End Role="PostCategory" Type="CoolMvcBlogModel.Store.PostCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostCategory">
+              <PropertyRef Name="PostCategory_Category_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CoolMvcBlogModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BlogModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AuthorSet" EntityType="CoolMvcBlogModel.Author" />
+          <EntitySet Name="CategorySet" EntityType="CoolMvcBlogModel.Category" />
+          <EntitySet Name="CommentSet" EntityType="CoolMvcBlogModel.Comment" />
+          <EntitySet Name="PostSet" EntityType="CoolMvcBlogModel.Post" />
+          <AssociationSet Name="FK_PostAuthor" Association="CoolMvcBlogModel.FK_PostAuthor">
+            <End Role="AuthorSet" EntitySet="AuthorSet" />
+            <End Role="PostSet" EntitySet="PostSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Comments_Posts" Association="CoolMvcBlogModel.FK_Comments_Posts">
+            <End Role="PostSet" EntitySet="PostSet" />
+            <End Role="Comments" EntitySet="CommentSet" />
+          </AssociationSet>
+          <AssociationSet Name="PostCategory" Association="CoolMvcBlogModel.PostCategory">
+            <End Role="CategorySet" EntitySet="CategorySet" />
+            <End Role="PostSet" EntitySet="PostSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Author">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Posts" Relationship="CoolMvcBlogModel.PostCategory" FromRole="CategorySet" ToRole="PostSet" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="Author" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="WebSite" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Text" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PostId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Post" Relationship="CoolMvcBlogModel.FK_Comments_Posts" FromRole="Comments" ToRole="PostSet" />
+        </EntityType>
+        <EntityType Name="Post">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AuthorId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Text" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DatePublished" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Author" Relationship="CoolMvcBlogModel.FK_PostAuthor" FromRole="PostSet" ToRole="AuthorSet" />
+          <NavigationProperty Name="Comments" Relationship="CoolMvcBlogModel.FK_Comments_Posts" FromRole="PostSet" ToRole="Comments" />
+          <NavigationProperty Name="Categories" Relationship="CoolMvcBlogModel.PostCategory" FromRole="PostSet" ToRole="CategorySet" />
+        </EntityType>
+        <Association Name="FK_PostAuthor">
+          <End Role="AuthorSet" Type="CoolMvcBlogModel.Author" Multiplicity="1" />
+          <End Role="PostSet" Type="CoolMvcBlogModel.Post" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AuthorSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostSet">
+              <PropertyRef Name="AuthorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Comments_Posts">
+          <End Role="PostSet" Type="CoolMvcBlogModel.Post" Multiplicity="1" />
+          <End Role="Comments" Type="CoolMvcBlogModel.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Comments">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PostCategory">
+          <End Role="CategorySet" Type="CoolMvcBlogModel.Category" Multiplicity="*" />
+          <End Role="PostSet" Type="CoolMvcBlogModel.Post" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CoolMvcBlogModelStoreContainer" CdmEntityContainer="BlogModelContainer">
+          <EntitySetMapping Name="AuthorSet"><EntityTypeMapping TypeName="CoolMvcBlogModel.Author"><MappingFragment StoreEntitySet="AuthorSet">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CategorySet"><EntityTypeMapping TypeName="CoolMvcBlogModel.Category"><MappingFragment StoreEntitySet="CategorySet">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CommentSet"><EntityTypeMapping TypeName="CoolMvcBlogModel.Comment"><MappingFragment StoreEntitySet="Comments">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+            <ScalarProperty Name="Author" ColumnName="Author" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+            <ScalarProperty Name="Text" ColumnName="Text" />
+            <ScalarProperty Name="PostId" ColumnName="PostId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PostSet"><EntityTypeMapping TypeName="CoolMvcBlogModel.Post"><MappingFragment StoreEntitySet="PostSet">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+            <ScalarProperty Name="Title" ColumnName="Title" />
+            <ScalarProperty Name="Text" ColumnName="Text" />
+            <ScalarProperty Name="DatePublished" ColumnName="DatePublished" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="PostCategory" TypeName="CoolMvcBlogModel.PostCategory" StoreEntitySet="PostCategory">
+            <EndProperty Name="CategorySet">
+              <ScalarProperty Name="Id" ColumnName="Categories_Id" />
+            </EndProperty>
+            <EndProperty Name="PostSet">
+              <ScalarProperty Name="Id" ColumnName="PostCategory_Category_Id" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="BlogModel">
+        <EntityTypeShape EntityType="CoolMvcBlogModel.Author" Width="1.5" PointX="0.75" PointY="1.375" Height="1.4033821614583331" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoolMvcBlogModel.Category" Width="1.5" PointX="3" PointY="4.375" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoolMvcBlogModel.Comment" Width="1.5" PointX="5.25" PointY="1" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoolMvcBlogModel.Post" Width="1.5" PointX="3" PointY="1" Height="2.5571907552083335" IsExpanded="true" />
+        <AssociationConnector Association="CoolMvcBlogModel.FK_PostAuthor" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.0766910807291667" />
+          <ConnectorPoint PointX="3" PointY="2.0766910807291667" />
+        </AssociationConnector>
+        <AssociationConnector Association="CoolMvcBlogModel.FK_Comments_Posts" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.2785953776041659" />
+          <ConnectorPoint PointX="5.25" PointY="2.2785953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="CoolMvcBlogModel.PostCategory" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="4.375" />
+          <ConnectorPoint PointX="3.75" PointY="3.5571907552083335" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

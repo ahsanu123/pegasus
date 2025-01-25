@@ -1,0 +1,15 @@
+﻿<%@ Master Language="VB" CodeFile="Articles.master.vb" Inherits="Masters_Articles" MasterPageFile="Root.master" %>
+<asp:Content ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" >
+</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    <h2>Articles</h2>
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+    <div class="rightCol">
+        <h2>This is the right container</h2>
+        <p>Some stuff here</p>
+    </div>
+</asp:Content>

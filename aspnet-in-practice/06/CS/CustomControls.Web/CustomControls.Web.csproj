@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C5B4B48-492A-4FA8-A2F1-A0AB49F0DF0A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomControls.Web</RootNamespace>
+    <AssemblyName>CustomControls.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FreeText.aspx" />
+    <Content Include="MessageTemplate.aspx" />
+    <Content Include="PostControl.aspx" />
+    <Content Include="SingleView.aspx" />
+    <Content Include="SuperDropDownList.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Zone.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FreeText.aspx.cs">
+      <DependentUpon>FreeText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FreeText.aspx.designer.cs">
+      <DependentUpon>FreeText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTemplate.aspx.cs">
+      <DependentUpon>MessageTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageTemplate.aspx.designer.cs">
+      <DependentUpon>MessageTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostControl.aspx.cs">
+      <DependentUpon>PostControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostControl.aspx.designer.cs">
+      <DependentUpon>PostControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleView.aspx.cs">
+      <DependentUpon>SingleView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SingleView.aspx.designer.cs">
+      <DependentUpon>SingleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperDropDownList.aspx.cs">
+      <DependentUpon>SuperDropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperDropDownList.aspx.designer.cs">
+      <DependentUpon>SuperDropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zone.aspx.cs">
+      <DependentUpon>Zone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zone.aspx.designer.cs">
+      <DependentUpon>Zone.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomControls.Composite\CustomControls.Composite.csproj">
+      <Project>{D3372E69-EA91-457F-A181-03A905F8DC25}</Project>
+      <Name>CustomControls.Composite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomControls.ControlBuilders\CustomControls.ControlBuilders.csproj">
+      <Project>{D8B73E1A-B538-48D5-AFEF-BC6B24850314}</Project>
+      <Name>CustomControls.ControlBuilders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomControls.Databinding\CustomControls.Databinding.csproj">
+      <Project>{083E9BAE-9F8D-41DA-9451-D4D398DDD1CA}</Project>
+      <Name>CustomControls.Databinding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomControls.Templated\CustomControls.Templated.csproj">
+      <Project>{F4D11FF8-02E4-484C-AE1D-DC43B56A1CA1}</Project>
+      <Name>CustomControls.Templated</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12418</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

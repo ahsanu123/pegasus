@@ -1,0 +1,13 @@
+﻿<browsers>
+  <browser refID="Default" >
+    <controlAdapters>
+      <adapter
+            controlType="System.Web.UI.WebControls.DropDownList"
+            adapterType="ASPNET4InPractice.DropDownListAdapter,App_Code" />
+
+      <adapter
+      controlType="System.Web.UI.WebControls.DataList"
+      adapterType="ASPNET4InPractice.DataListAdapter,App_Code" />
+    </controlAdapters>
+  </browser>
+</browsers>

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="VB" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="CoolMvcBlog" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <script src="/Scripts/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcValidation.js" type="text/javascript"></script>
+    <link href="/Content/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="Head" runat="server" />
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>
+                <a href="/">Cool MVC Blog</a></h1>
+        </div>
+        <div id="sub_header">
+            <%--... the coolest MVC Blog ever - last rendered at <%: DateTime.Now.ToLongTimeString() %>--%>
+            ... the coolest MVC Blog ever
+            </div>
+        <div id="main_content_top">
+            <%: Html.Login("Security", "Login", "Logout") %>
+        </div>
+        <div id="main_content">
+            <asp:ContentPlaceHolder runat="server" ID="mainContent" />
+            <div id="clear">
+            </div>
+        </div>
+        <div id="main_content_bottom">
+        </div>
+        <div id="footer">
+            ASP.NET 4.0 in Practice</div>
+    </div>
+</body>
+</html>

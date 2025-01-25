@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentMigrator.Runner.Snowflake</name>
+    </assembly>
+    <members>
+        <member name="M:FluentMigrator.Runner.BatchParser.SnowflakeBatchParser.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.BatchParser.SnowflakeBatchParser.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeColumn.FormatIdentity(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeColumn.FormatCollation(FluentMigrator.Model.ColumnDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeDescriptionGenerator.GenerateTableDescription(System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeDescriptionGenerator.GenerateColumnDescription(System.String,System.String,System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.AlterColumn">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.AlterDefaultConstraintExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.DeleteDefaultConstraintExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.CreateSchemaExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.DeleteSchemaExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.AlterColumnExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.RenameTableExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.AlterSchemaExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.CreateIndexExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator.Generate(FluentMigrator.Expressions.DeleteIndexExpression)">
+            <inheritdoc />
+        </member>
+        <member name="P:FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.OpenQuote">
+            <inheritdoc />
+            <summary>
+            If quoting is disabled, returns empty string.
+            </summary>
+        </member>
+        <member name="P:FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.OpenQuoteEscapeString">
+            <inheritdoc />
+            <summary>
+            If quoting is disabled, returns empty string.
+            </summary>
+        </member>
+        <member name="P:FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.CloseQuote">
+            <inheritdoc />
+            <summary>
+            If quoting is disabled, returns empty string.
+            </summary>
+        </member>
+        <member name="P:FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.CloseQuoteEscapeString">
+            <inheritdoc />
+            <summary>
+            If quoting is disabled, returns empty string.
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.QuoteSchemaName(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.FormatDateTime(System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.FormatDateTimeOffset(System.DateTimeOffset)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeOptions.Clone">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.#ctor(FluentMigrator.Runner.Processors.Snowflake.SnowflakeDbFactory,FluentMigrator.Runner.Generators.Snowflake.SnowflakeGenerator,FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter,Microsoft.Extensions.Logging.ILogger{FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor},Microsoft.Extensions.Options.IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor,FluentMigrator.Runner.Processors.Snowflake.SnowflakeOptions,System.IServiceProvider)">
+            <inheritdoc />
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.DatabaseType">
+            <inheritdoc />
+        </member>
+        <member name="P:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.DatabaseTypeAliases">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.Process(FluentMigrator.Expressions.PerformDBOperationExpression)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.Process(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.Execute(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.SchemaExists(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.TableExists(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.ColumnExists(System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.ConstraintExists(System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.IndexExists(System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.SequenceExists(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.DefaultValueExists(System.String,System.String,System.String,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.ReadTableData(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.Read(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.Processors.Snowflake.SnowflakeProcessor.Exists(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:FluentMigrator.Runner.SnowflakeException.#ctor(System.String,System.Exception)">
+            <inheritdoc />
+        </member>
+        <member name="T:FluentMigrator.Runner.SnowflakeRunnerBuilderExtensions">
+            <summary>
+            Extension methods for <see cref="T:FluentMigrator.Runner.IMigrationRunnerBuilder"/>
+            </summary>
+        </member>
+        <member name="M:FluentMigrator.Runner.SnowflakeRunnerBuilderExtensions.AddSnowflake(FluentMigrator.Runner.IMigrationRunnerBuilder)">
+            <summary>
+            Adds Snowflake support
+            </summary>
+            <param name="builder">The builder to add the Snowflake-specific services to</param>
+            <returns>The migration runner builder</returns>
+        </member>
+        <member name="M:FluentMigrator.Runner.SnowflakeRunnerBuilderExtensions.AddSnowflake(FluentMigrator.Runner.IMigrationRunnerBuilder,FluentMigrator.Runner.Processors.Snowflake.SnowflakeOptions)">
+            <summary>
+            Adds Snowflake support
+            </summary>
+            <param name="builder">The builder to add the Snowflake-specific services to</param>
+            <param name="sfOptions">Snowflake options</param>
+            <returns>The migration runner builder</returns>
+        </member>
+    </members>
+</doc>
