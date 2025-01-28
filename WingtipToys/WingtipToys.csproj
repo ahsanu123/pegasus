@@ -288,6 +288,24 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.3.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.3.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -382,6 +400,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Component\ProductCard.ascx" />
     <Content Include="Component\ProductTable.ascx" />
     <Content Include="Pages\About.aspx" />
     <Content Include="App_Readme\Elmah.txt" />
@@ -393,6 +412,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\sakura.css" />
     <Content Include="Pages\CustomEventPage.aspx" />
+    <Content Include="Pages\DataSelectPage.aspx" />
     <Content Include="Pages\ErrorPage.aspx" />
     <Content Include="packages.config" />
     <Content Include="App.config" />
@@ -461,8 +481,16 @@
     <Compile Include="Component\CustomFormView.IPostBackContainer.cs" />
     <Compile Include="Component\CustomFormView.IPostBackEventHandler.cs" />
     <Compile Include="Component\CustomPostBackButton.cs" />
+    <Compile Include="Component\DataSelect.cs" />
     <Compile Include="Component\FreeText.cs" />
     <Compile Include="Component\Message.cs" />
+    <Compile Include="Component\ProductCard.ascx.cs">
+      <DependentUpon>ProductCard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Component\ProductCard.ascx.designer.cs">
+      <DependentUpon>ProductCard.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Component\ProductTable.ascx.cs">
       <DependentUpon>ProductTable.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -472,6 +500,7 @@
     </Compile>
     <Compile Include="Constant\ConfigurationConstant.cs" />
     <Compile Include="Constant\SqlCompilerConstant.cs" />
+    <Compile Include="Controller\HomeController.cs" />
     <Compile Include="Migration\MainMigrator.cs" />
     <Compile Include="Migration\MigrationBase.cs" />
     <Compile Include="Migration\MigrationList.cs" />
@@ -509,6 +538,13 @@
     </Compile>
     <Compile Include="Pages\CustomEventPage.aspx.designer.cs">
       <DependentUpon>CustomEventPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataSelectPage.aspx.cs">
+      <DependentUpon>DataSelectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DataSelectPage.aspx.designer.cs">
+      <DependentUpon>DataSelectPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ErrorPage.aspx.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>

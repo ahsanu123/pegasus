@@ -5,19 +5,21 @@ namespace WingtipToys.Routes
     public static class RouteNames
     {
         public const string AboutPage = "about-page";
-        public const string CustomEventPage= "custom-event-page";
+        public const string CustomEventPage = "custom-event-page";
         public const string ContactPage = "contact-page";
         public const string ManagementPage = "management-page";
         public const string ErrorPage = "error-page";
+        public const string DataSelectPage = "data-select-page";
     }
 
     public static class PhysicalPath
     {
         public const string AboutAspx = "~/Pages/About.aspx";
-        public const string CustomEventPageAspx= "~/Pages/CustomEventPage.aspx";
+        public const string CustomEventPageAspx = "~/Pages/CustomEventPage.aspx";
         public const string ContactAspx = "~/Pages/Contact.aspx";
         public const string ManagementAspx = "~/Pages/Management.aspx";
         public const string ErrorAspx = "~/Pages/ErrorPage.aspx";
+        public const string DataSelectPage = "~/Pages/DataSelectPage.aspx";
     }
 
     public static class ApplicationRoute
@@ -48,6 +50,11 @@ namespace WingtipToys.Routes
                 RouteNames.ErrorPage,
                 nameof(RouteNames.ErrorPage),
                 PhysicalPath.ErrorAspx
+            ),
+            new RouteSpec(
+                RouteNames.DataSelectPage,
+                nameof(RouteNames.DataSelectPage),
+                PhysicalPath.DataSelectPage
             ),
         };
     }
