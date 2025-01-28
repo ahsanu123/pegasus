@@ -83,18 +83,18 @@ namespace WingtipToys
         {
             if (IsPostBack)
             {
-                var product = new Product
-                {
-                    Id = 0,
-                    Name = NameInput.Text,
-                    Description = DescriptionInput.Text,
-                };
+                //var product = new Product
+                //{
+                //    Id = 0,
+                //    Name = NameInput.Text,
+                //    Description = DescriptionInput.Text,
+                //};
 
-                int price = 0;
-                Int32.TryParse(UnitPriceInput.Text, out price);
-                product.UnitPrice = price;
+                //int price = 0;
+                //Int32.TryParse(UnitPriceInput.Text, out price);
+                //product.UnitPrice = price;
 
-                _productRepo.AddProduct(product).GetAwaiter().GetResult();
+                //_productRepo.AddProduct(product).GetAwaiter().GetResult();
                 Page.Response.Redirect(Page.Request.Url.ToString());
             }
         }

@@ -392,6 +392,7 @@
     <!-- <Content Include="Content\bootstrap.css" /> -->
     <Content Include="Content\Site.css" />
     <Content Include="Content\sakura.css" />
+    <Content Include="Pages\CustomEventPage.aspx" />
     <Content Include="Pages\ErrorPage.aspx" />
     <Content Include="packages.config" />
     <Content Include="App.config" />
@@ -451,6 +452,15 @@
     <Compile Include="Builder\Services\AddFluentMigratorProvider.cs" />
     <Compile Include="Builder\Services\ServiceCollectionExtension.cs" />
     <Compile Include="Builder\Services\SqliteConnectionProvider.cs" />
+    <Compile Include="Component\CustomBoundControl.cs" />
+    <Compile Include="Component\CustomCompositeDataBoundControl.cs" />
+    <Compile Include="Component\CustomDataItemContainer.cs" />
+    <Compile Include="Component\CustomFormView.CompositeDataBoundControl.cs" />
+    <Compile Include="Component\CustomFormView.IDataBoundItemControl.cs" />
+    <Compile Include="Component\CustomFormView.IDataItemContainer.cs" />
+    <Compile Include="Component\CustomFormView.IPostBackContainer.cs" />
+    <Compile Include="Component\CustomFormView.IPostBackEventHandler.cs" />
+    <Compile Include="Component\CustomPostBackButton.cs" />
     <Compile Include="Component\FreeText.cs" />
     <Compile Include="Component\Message.cs" />
     <Compile Include="Component\ProductTable.ascx.cs">
@@ -492,6 +502,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomEventPage.aspx.cs">
+      <DependentUpon>CustomEventPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomEventPage.aspx.designer.cs">
+      <DependentUpon>CustomEventPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ErrorPage.aspx.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>

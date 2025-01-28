@@ -83,6 +83,7 @@ namespace WingtipToys
                 RouteNames.ManagementPage,
                 RouteNames.AboutPage,
                 RouteNames.ContactPage,
+                RouteNames.CustomEventPage,
             };
 
             return listPages.AsQueryable();
