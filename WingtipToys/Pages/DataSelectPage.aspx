@@ -14,8 +14,7 @@
     <h3> Data Select Page </h3> 
 
     <controls:ProductCard 
-        Name="Hell"
+        Product='<%# MyProduct %>'
         runat="server"/>
-
 
 </asp:Content>

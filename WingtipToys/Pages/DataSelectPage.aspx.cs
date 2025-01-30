@@ -13,6 +13,7 @@ namespace WingtipToys
 
         protected void Page_Load(object sender, EventArgs e) { }
 
+        protected Product MyProduct = new Product { Name = "Apple", Description = "An Red Apple", UnitPrice = 2 };
         public DataSelectPage()
         {
             _productRepo =

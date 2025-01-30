@@ -13,6 +13,7 @@ namespace WingtipToys
 {
     public partial class CustomEventPage : Page
     {
+        public Product MyProduct { get; set; } = new Product { Name = "has been search for fucking week", UnitPrice = 10000, Description = "heheheh" };
         protected void Page_Load(object sender, EventArgs e) { }
         protected void GetValueFromPostBack(object sender, EventArgs e)
 		{

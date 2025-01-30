@@ -6,4 +6,6 @@
 
 <h3>Product Card</h3>
 
-<%#: Name %>
+<p> <%= Product.Name%> </p>
+<p> <%= Product.UnitPrice%> </p>
+<p> <%= Product.Description%> </p>
