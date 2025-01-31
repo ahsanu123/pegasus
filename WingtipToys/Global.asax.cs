@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using System.Linq;
 using System.Web;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -7,8 +8,11 @@ using Autofac;
 using Autofac.Integration.Web;
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
+using SqlKata;
 using WingtipToys.Builder;
 using WingtipToys.Builder.Application;
+using WingtipToys.Builder.Extension;
+using WingtipToys.Builder.Services;
 using WingtipToys.Logic;
 using WingtipToys.Models;
 using WingtipToys.Routes;
@@ -34,10 +38,30 @@ namespace WingtipToys
             _containerProvider = new ContainerProvider(buildServices);
         }
 
+        void SeedDb(IServiceProvider provider)
+        {
+            var connection = _containerProvider.ApplicationContainer.Resolve<ISqliteConnectionProvider>();
+            var CheckForVegetables_Query = new Query(nameof(Product));
+
+            using (var conn = connection.CreateConnection())
+            {
+                var vegeOnDb = conn.QuerySqlKataAsync<Product>(CheckForVegetables_Query).GetAwaiter().GetResult();
+                if(vegeOnDb.Count() == 0)
+                {
+                    ProductSeed.PredefinedProduct.ForEach(item =>
+                    {
+                        conn.InsertToDatabase(item,true).GetAwaiter().GetResult();
+                    });
+                }
+            }
+
+        }
+
         void PrepareApplication()
         {
             var provider = _containerProvider.ApplicationContainer.Resolve<IServiceProvider>();
             provider.UseFluentMigrator();
+            SeedDb(provider);   
         }
 
         void Application_Start(object sender, EventArgs e)

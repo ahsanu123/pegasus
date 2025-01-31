@@ -13,8 +13,19 @@
 
     <h3> Data Select Page </h3> 
 
-    <controls:ProductCard 
-        Product='<%# MyProduct %>'
-        runat="server"/>
+    <div class="product-container">
+        <asp:Repeater
+            ItemType="WingtipToys.Models.Product"
+            SelectMethod="GetProductData"
+            runat="server">
+
+            <ItemTemplate>
+                <controls:ProductCard 
+                    Product='<%# Item %>'
+                    runat="server"/>
+            </ItemTemplate>
+
+        </asp:Repeater>
+    </div>
 
 </asp:Content>

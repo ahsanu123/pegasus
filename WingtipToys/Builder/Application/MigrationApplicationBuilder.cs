@@ -8,7 +8,7 @@ namespace WingtipToys.Builder.Application
 {
     public static class MigrationApplicationBuilder
     {
-        public const int MIGRATION_VERSION = 2;
+        public const int MIGRATION_VERSION = 3;
 
         public const string MIGRATION_DESCRIPTION = "Webform with services";
 

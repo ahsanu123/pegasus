@@ -15,6 +15,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Wingtip Toys</title>
 
+    <asp:ContentPlaceHolder 
+        runat="server"
+        ID="stylesheet">
+        <link rel="stylesheet" type="text/css" href="~/Content/Site.css"/>
+        <link rel="stylesheet" type="text/css" href="~/Component/ProductCard.css"/>
+    </asp:ContentPlaceHolder>
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -71,7 +78,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Wingtip Toys</p>
+                <p>&copy; 🌿 <%: DateTime.Now.Year %> - Pegasus Green Grocer</p>
             </footer>
         </div>
 

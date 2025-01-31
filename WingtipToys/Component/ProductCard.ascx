@@ -1,11 +1,28 @@
-<%@ Control 
+﻿<%@ Control 
     Language="C#"
     AutoEventWireup="true"
     CodeBehind="ProductCard.ascx.cs"
     Inherits="WingtipToys.CustomControl.ProductCard" %>
 
-<h3>Product Card</h3>
+<div class="product-card">
 
-<p> <%= Product.Name%> </p>
-<p> <%= Product.UnitPrice%> </p>
-<p> <%= Product.Description%> </p>
+    <div>
+        <img 
+            alt="<%#: Product.Name %>"
+            src="<%#: Product.ImageUrl %>"
+            />
+    </div>
+    <div>
+        <sub><%#: Product.Type %></sub>
+
+        <div class="properties">
+            <b><%#: Product.Name %> - $<%#: Product.UnitPrice %></b>
+            <button>➕ Cart</button>
+        </div>
+
+        <p class="description">
+            <%#: Product.Description %>
+        </p>
+    </div>
+
+</div>
