@@ -11,8 +11,7 @@ namespace WingtipToys
 {
 
 
-    public partial class About
+    public partial class CartPage 
     {
-
-   }
+    }
 }

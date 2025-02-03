@@ -80,11 +80,15 @@ namespace WingtipToys
         {
             var listPages = new List<String>
             {
-                RouteNames.ManagementPage,
-                RouteNames.AboutPage,
+                RouteNames.ProductPage,
+                RouteNames.EditProductPage,
+                RouteNames.CreateProductPage,
+                RouteNames.CartPage,
                 RouteNames.ContactPage,
-                RouteNames.CustomEventPage,
-                RouteNames.DataSelectPage,
+                RouteNames.AboutPage,
+                // RouteNames.ManagementPage,
+                // RouteNames.CustomEventPage,
+                // RouteNames.DataSelectPage,
             };
 
             return listPages.AsQueryable();

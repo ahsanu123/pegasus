@@ -11,14 +11,6 @@
     ContentPlaceHolderID="MainContent" 
     runat="server">
 
-    <controls:Message 
-        runat="server" 
-        ID="MyMessage"
-        Text="This is test">
-        <ItemTemplate>
-         <p>Here’s a formatted template: <%#Container.Text %></p>
-        </ItemTemplate>
-    </controls:Message>
 
     <h2><%: Title %>.</h2>
     <p>

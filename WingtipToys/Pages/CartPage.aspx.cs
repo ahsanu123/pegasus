@@ -10,7 +10,7 @@ using WingtipToys.Models;
 
 namespace WingtipToys
 {
-    public partial class About : Page
+    public partial class CartPage : Page
     {
         protected void Page_Load(object sender, EventArgs e) { }
 

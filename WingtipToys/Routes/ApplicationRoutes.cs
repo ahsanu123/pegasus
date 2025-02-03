@@ -10,6 +10,10 @@ namespace WingtipToys.Routes
         public const string ManagementPage = "management-page";
         public const string ErrorPage = "error-page";
         public const string DataSelectPage = "data-select-page";
+        public const string CreateProductPage = "create-product-page";
+        public const string EditProductPage = "edit-product-page";
+        public const string ProductPage = "product-page";
+        public const string CartPage = "cart-page";
     }
 
     public static class PhysicalPath
@@ -20,6 +24,10 @@ namespace WingtipToys.Routes
         public const string ManagementAspx = "~/Pages/Management.aspx";
         public const string ErrorAspx = "~/Pages/ErrorPage.aspx";
         public const string DataSelectPage = "~/Pages/DataSelectPage.aspx";
+        public const string CreateProductPage = "~/Pages/CreateProductPage.aspx";
+        public const string EditProductPage = "~/Pages/EditProductPage.aspx";
+        public const string ProductPage = "~/Pages/ProductPage.aspx";
+        public const string CartPage = "~/Pages/CartPage.aspx";
     }
 
     public static class ApplicationRoute
@@ -56,6 +64,22 @@ namespace WingtipToys.Routes
                 nameof(RouteNames.DataSelectPage),
                 PhysicalPath.DataSelectPage
             ),
+            new RouteSpec(
+                RouteNames.CreateProductPage,
+                nameof(RouteNames.CreateProductPage),
+                PhysicalPath.CreateProductPage
+            ),
+            new RouteSpec(
+                RouteNames.EditProductPage,
+                nameof(RouteNames.EditProductPage),
+                PhysicalPath.EditProductPage
+            ),
+            new RouteSpec(
+                RouteNames.ProductPage,
+                nameof(RouteNames.ProductPage),
+                PhysicalPath.ProductPage
+            ),
+            new RouteSpec(RouteNames.CartPage, nameof(RouteNames.CartPage), PhysicalPath.CartPage),
         };
     }
 }
