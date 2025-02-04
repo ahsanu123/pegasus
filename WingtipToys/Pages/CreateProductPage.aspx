@@ -15,30 +15,28 @@
     Create  Product  page
   </h2>   
 
-    <form>
-        <asp:Repeater
-            SelectMethod="GetProductForm"
-            ItemType="System.String"
-            runat="server">
+    <asp:Repeater
+        SelectMethod="GetProductForm"
+        ItemType="System.String"
+        runat="server">
 
-            <ItemTemplate>
-                <label>
-                    <b><%# Item %></b>
-                </label>
+        <ItemTemplate>
+            <label>
+                <b><%# Item %></b>
+            </label>
 
-                <input 
-                    name="<%# Item %>"
-                    type="text" />
-            </ItemTemplate>
+            <input 
+                name="<%# Item %>"
+                type="text" />
+        </ItemTemplate>
 
-        </asp:Repeater>
+    </asp:Repeater>
 
-        <div>
-            <button type="submit">
-                Create Product
-            </button>
-        </div>
-    </form>
+    <div>
+        <button type="submit">
+            Create Product
+        </button>
+    </div>
 
     <asp:Label
         ID="debugBox"

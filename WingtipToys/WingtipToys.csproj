@@ -506,6 +506,7 @@
     <Compile Include="Migration\MigrationBase.cs" />
     <Compile Include="Migration\MigrationList.cs" />
     <Compile Include="Migration\ModelToMigration.cs" />
+    <Compile Include="Models\InputModel.cs" />
     <Compile Include="Models\Dummy.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Models\ProductSeeds.cs" />

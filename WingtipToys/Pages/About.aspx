@@ -13,6 +13,9 @@
 
 
     <h2><%: Title %>.</h2>
+    <img
+        src="https://h7.alamy.com/comp/KFC8MW/fruits-fruit-food-collection-background-banner-orange-apple-apples-KFC8MW.jpg"
+        />
     <p>
         Viki A. Windfeldt was named the 2014 recipient of the Lorraine P. Sachs Standard of Excellence
         Award. This award was established in 2008 by the National Association of State Boards of

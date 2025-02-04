@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text.Json;
 using Elmah.ContentSyndication;
 using WebGrease.Css.Extensions;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
+using System;
+using System.Web;
 
 namespace WingtipToys.Helper
 {
@@ -21,19 +25,39 @@ namespace WingtipToys.Helper
                 formObject.Add(item, form[item]);
             });
 
-            var jsonstring = JsonSerializer.Serialize(formObject);
+            var jsonstring = JsonConvert.SerializeObject(formObject);
 
-            T deserialized = JsonSerializer.Deserialize<T>(jsonstring);
+            var deserialized = JsonConvert.DeserializeObject<T>(jsonstring);  
+
             return deserialized;
         }
 
         public static string GetFormAsJson(NameValueCollection form)
         {
-            var jsonstring = JsonSerializer.Serialize(
-                form.AllKeys.ToDictionary(key => key, key => form[key]),
-                new JsonSerializerOptions { WriteIndented = true }
+            var jsonstring = JsonConvert.SerializeObject(
+                form.AllKeys.ToDictionary(key => key, key => form[key])
             );
             return jsonstring;
+        }
+
+        public static IEnumerable<string> GetForm(this Type type, bool includeId=true)
+        {
+            var list = type.GetProperties().Select(item => item.Name);
+            if(includeId)
+                return list.Where(item => item.ToLower()!="id").ToList();
+            return list.ToList();   
+        }
+
+        public static void  RedirectWithQuery(this HttpResponse response, string url, object queryParam)
+        {
+            var query = HttpUtility.ParseQueryString(String.Empty);
+
+            foreach(var prop in queryParam.GetType().GetProperties())
+            {
+                query[prop.Name] = prop.GetValue(queryParam).ToString();
+            }
+
+            response.Redirect($"{url}?{query}");
         }
     }
 }

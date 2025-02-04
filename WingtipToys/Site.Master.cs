@@ -81,7 +81,7 @@ namespace WingtipToys
             var listPages = new List<String>
             {
                 RouteNames.ProductPage,
-                RouteNames.EditProductPage,
+                //RouteNames.EditProductPage,
                 RouteNames.CreateProductPage,
                 RouteNames.CartPage,
                 RouteNames.ContactPage,
