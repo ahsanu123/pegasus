@@ -17,12 +17,12 @@
 
         <div class="properties">
             <b><%#: Product.Name %> - $<%#: Product.UnitPrice %></b>
-            <asp:Button 
+<%--            <asp:Button 
                 CommandArgument="<%# Product.Id %>"
                 OnClick="Unnamed_Click"
                 Text="Edit"
-                runat="server"/>
-            <button>➕ Cart</button>
+                runat="server"/>--%>
+<%--            <button>➕ Cart</button>--%>
         </div>
 
         <p class="description">

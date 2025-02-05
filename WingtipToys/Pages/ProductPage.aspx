@@ -22,8 +22,20 @@
         runat="server"/> 
     <hr />
 
+    <asp:UpdatePanel
+        ID="Updatepanel"
+        runat="server">
+
+        <ContentTemplate>
+            <controls:ProductList 
+                ID="ProductList"
+                runat="server"/>
+        </ContentTemplate>
+
+    </asp:UpdatePanel>
+
     <div class="product-container">
-        <asp:Repeater
+<%--        <asp:Repeater
             ID="ProductRepeater"
             ItemType="WingtipToys.Models.Product"
             OnItemDataBound="ProductRepeaterOnItemDataBound"
@@ -31,12 +43,12 @@
 
             <ItemTemplate>
                 <controls:TwoWayProductCard 
-                    ID="twoWayProductCard"
+                    ID="twoWayProduct"Card"
                     Product="<%# Item %>"
                     runat="server"/>
             </ItemTemplate>
 
-        </asp:Repeater>
+        </asp:Repeater>--%>
     </div>
 
 

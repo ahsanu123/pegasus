@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Elmah.ContentSyndication;
+using Microsoft.Identity.Client;
 using Newtonsoft.Json;
 using WebGrease.Css.Extensions;
 
@@ -84,6 +85,16 @@ namespace WingtipToys.Helper
         {
             var control = args.Item.FindControl(controlName);
             return (T)control;
+        }
+
+        public static string SerializeObject(object anything)
+        {
+            return JsonConvert.SerializeObject(anything);
+        }
+
+        public static T DeserializeObject<T>(string json)
+        {
+            return JsonConvert.DeserializeObject<T>(json);
         }
     }
 }

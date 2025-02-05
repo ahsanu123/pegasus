@@ -10,7 +10,7 @@ namespace WingtipToys.CustomControl
     {
         public Product Product{ get; set; }
         protected void Page_Load(object sender, EventArgs e) { 
-            if(!IsPostBack) DataBind(); 
+            //if(!IsPostBack) DataBind(); 
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)

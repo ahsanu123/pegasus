@@ -400,8 +400,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Component\ProductCard.ascx" />
-    <Content Include="Component\ProductCard.css" />
+    <Content Include="Component\Shared\ProductCard.ascx" />
+    <Content Include="Component\Shared\ProductCard.css" />
+    <Content Include="Component\ProductList.ascx" />
     <Content Include="Component\ProductTable.ascx" />
     <Content Include="Component\TwoWayProductCard.ascx" />
     <Content Include="Pages\About.aspx" />
@@ -486,12 +487,19 @@
     <Compile Include="Component\DataSelect.cs" />
     <Compile Include="Component\FreeText.cs" />
     <Compile Include="Component\Message.cs" />
-    <Compile Include="Component\ProductCard.ascx.cs">
+    <Compile Include="Component\Shared\ProductCard.ascx.cs">
       <DependentUpon>ProductCard.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Component\ProductCard.ascx.designer.cs">
+    <Compile Include="Component\Shared\ProductCard.ascx.designer.cs">
       <DependentUpon>ProductCard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ProductList.ascx.cs">
+      <DependentUpon>ProductList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Component\ProductList.ascx.designer.cs">
+      <DependentUpon>ProductList.ascx</DependentUpon>
     </Compile>
     <Compile Include="Component\ProductTable.ascx.cs">
       <DependentUpon>ProductTable.ascx</DependentUpon>

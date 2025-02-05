@@ -29,21 +29,23 @@ namespace WingtipToys
         {
             if (!IsPostBack)
             {
-                var products = GetProductData();
-                Session[_listProductSession] = products;
-                Session[_listProductIsEditMode] = products.Select(item => new IsEditModeProduct
-                {
-                    Id = item.Id,
-                    IsEditMode = (item.Id % 2 == 0) ? true : false,
-                });
-                BindProductRepeaterData();
+                ProductList.Products = GetProductData().ToList();
+
+                //var products = GetProductData();
+                //Session[_listProductSession] = products;
+                //Session[_listProductIsEditMode] = products.Select(item => new IsEditModeProduct
+                //{
+                //    Id = item.Id,
+                //    IsEditMode = (item.Id % 2 == 0) ? true : false,
+                //});
+                //BindProductRepeaterData();
             }
         }
 
         private void BindProductRepeaterData()
         {
-            ProductRepeater.DataSource = Session[_listProductSession];
-            ProductRepeater.DataBind();
+            //ProductRepeater.DataSource = Session[_listProductSession];
+            //ProductRepeater.DataBind();
         }
 
         public ProductPage()
