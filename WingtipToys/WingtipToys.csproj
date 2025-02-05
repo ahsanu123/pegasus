@@ -403,6 +403,7 @@
     <Content Include="Component\ProductCard.ascx" />
     <Content Include="Component\ProductCard.css" />
     <Content Include="Component\ProductTable.ascx" />
+    <Content Include="Component\TwoWayProductCard.ascx" />
     <Content Include="Pages\About.aspx" />
     <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Pages\CartPage.aspx" />
@@ -498,6 +499,12 @@
     </Compile>
     <Compile Include="Component\ProductTable.ascx.designer.cs">
       <DependentUpon>ProductTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TwoWayProductCard.ascx.cs">
+      <DependentUpon>TwoWayProductCard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TwoWayProductCard.ascx.designer.cs">
+      <DependentUpon>TwoWayProductCard.ascx</DependentUpon>
     </Compile>
     <Compile Include="Constant\ConfigurationConstant.cs" />
     <Compile Include="Constant\SqlCompilerConstant.cs" />
@@ -611,7 +618,6 @@
     </Compile>
     <Compile Include="Pages\ProductPage.aspx.cs">
       <DependentUpon>ProductPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\ProductPage.aspx.designer.cs">
       <DependentUpon>ProductPage.aspx</DependentUpon>

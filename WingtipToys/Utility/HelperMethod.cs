@@ -1,13 +1,15 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Text.Json;
-using Elmah.ContentSyndication;
-using WebGrease.Css.Extensions;
 using System.Text.Json.Serialization;
-using Newtonsoft.Json;
-using System;
 using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Elmah.ContentSyndication;
+using Newtonsoft.Json;
+using WebGrease.Css.Extensions;
 
 namespace WingtipToys.Helper
 {
@@ -27,7 +29,7 @@ namespace WingtipToys.Helper
 
             var jsonstring = JsonConvert.SerializeObject(formObject);
 
-            var deserialized = JsonConvert.DeserializeObject<T>(jsonstring);  
+            var deserialized = JsonConvert.DeserializeObject<T>(jsonstring);
 
             return deserialized;
         }
@@ -40,24 +42,48 @@ namespace WingtipToys.Helper
             return jsonstring;
         }
 
-        public static IEnumerable<string> GetForm(this Type type, bool includeId=true)
+        public static IEnumerable<string> GetForm(this Type type, bool includeId = true)
         {
             var list = type.GetProperties().Select(item => item.Name);
-            if(includeId)
-                return list.Where(item => item.ToLower()!="id").ToList();
-            return list.ToList();   
+            if (includeId)
+                return list.Where(item => item.ToLower() != "id").ToList();
+            return list.ToList();
         }
 
-        public static void  RedirectWithQuery(this HttpResponse response, string url, object queryParam)
+        public static void RedirectWithQuery(
+            this HttpResponse response,
+            string url,
+            object queryParam
+        )
         {
             var query = HttpUtility.ParseQueryString(String.Empty);
 
-            foreach(var prop in queryParam.GetType().GetProperties())
+            foreach (var prop in queryParam.GetType().GetProperties())
             {
                 query[prop.Name] = prop.GetValue(queryParam).ToString();
             }
 
             response.Redirect($"{url}?{query}");
+        }
+
+        public static bool IsRepeaterItem(this RepeaterItemEventArgs args)
+        {
+            return (
+                args.Item.ItemType == ListItemType.Item
+                || args.Item.ItemType == ListItemType.AlternatingItem
+            );
+        }
+
+        public static T GetRepeaterDataItem<T>(this RepeaterItemEventArgs args)
+        {
+            return (T)args.Item.DataItem;
+        }
+
+        public static T FindControlAs<T>(this RepeaterItemEventArgs args, string controlName)
+            where T : Control
+        {
+            var control = args.Item.FindControl(controlName);
+            return (T)control;
         }
     }
 }
