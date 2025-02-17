@@ -14,8 +14,6 @@ Product List
 
 <asp:Repeater
     ID="MainRepeater"
-    OnItemCommand="MainRepeater_ItemCommand"
-    OnItemDataBound="MainRepeater_ItemDataBound"
     ItemType="WingtipToys.Models.Product"
     runat="server">
 
@@ -27,17 +25,7 @@ Product List
             <controls:ProductCard 
                 Product="<%# Item %>"
                 runat="server"/>
-
-            <asp:Button 
-                CommandName="Edit"
-                CommandArgument="<%# Item.Id %>"
-                Text="Edit"
-                runat="server"/>
-            <asp:Button 
-                CommandName="Delete"
-                CommandArgument="<%# Item.Id %>"
-                Text="Delete"
-                runat="server"/>
+            <hr />
 
         </asp:Panel>
 
@@ -45,7 +33,9 @@ Product List
             ID="PanelEdit"
             runat="server">
 
-            <p>Edit</p>
+            <h4>Edit Mode</h4>
+            <b><%#: Item.Name %></b>
+            <hr />
 
         </asp:Panel>
     </ItemTemplate>

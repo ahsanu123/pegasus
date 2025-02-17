@@ -5,6 +5,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Autofac;
+using WingtipToys.ApplicationState;
 using WingtipToys.CustomControl;
 using WingtipToys.Helper;
 using WingtipToys.Models;
@@ -13,6 +14,13 @@ using WingtipToys.Routes;
 
 namespace WingtipToys
 {
+    public class ProductPageState : IPageStateBase
+    {
+        public string Id { get; set; } = nameof(ProductPageState);
+        public IEnumerable<Product> Products { get; set; }
+        public int? EditModeIndex { get; set; } = null;
+    }
+
     public class IsEditModeProduct
     {
         public int Id { get; set; }
@@ -21,31 +29,33 @@ namespace WingtipToys
 
     public partial class ProductPage : Page
     {
-        private const string _listProductSession = "ListProduct";
-        private const string _listProductIsEditMode = "ListProductIsEditMode";
         private IProductRepository _productRepo { get; set; }
+        public ProductPageState State {  get; set; } = new ProductPageState();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                ProductList.Products = GetProductData().ToList();
+                PageState.StateChange += OnPageStateUpdated;
 
-                //var products = GetProductData();
-                //Session[_listProductSession] = products;
-                //Session[_listProductIsEditMode] = products.Select(item => new IsEditModeProduct
-                //{
-                //    Id = item.Id,
-                //    IsEditMode = (item.Id % 2 == 0) ? true : false,
-                //});
-                //BindProductRepeaterData();
+                State.Products = GetProductData();
+                PageState.SetState(State);
+                BindMainRepeater();
             }
         }
 
-        private void BindProductRepeaterData()
+        protected void OnPageStateUpdated(string key, IPageStateBase stateBase)
         {
-            //ProductRepeater.DataSource = Session[_listProductSession];
-            //ProductRepeater.DataBind();
+            if(key == nameof(ProductPageState))
+            {
+                Updatepanel.Update();
+            }
+        }
+
+        private void BindMainRepeater()
+        {
+            MainRepeater.DataSource = State.Products;
+            MainRepeater.DataBind(); 
         }
 
         public ProductPage()
@@ -66,37 +76,39 @@ namespace WingtipToys
 
         protected void ProductRepeaterOnItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            if (e.IsRepeaterItem())
-            {
-                var data = e.GetRepeaterDataItem<Product>();
-                var control = e.FindControlAs<TwoWayProductCard>("twoWayProductCard");
-                var isListProductEditMode =
-                    (IEnumerable<IsEditModeProduct>)Session[_listProductIsEditMode];
+            //if (e.IsRepeaterItem())
+            //{
+            //    var data = e.GetRepeaterDataItem<Product>();
+            //    var control = e.FindControlAs<TwoWayProductCard>("twoWayProductCard");
+            //    var isListProductEditMode =
+            //        (IEnumerable<IsEditModeProduct>)Session[_listProductIsEditMode];
 
-                if (control != null)
-                {
-                    control.Product = data;
-                    control.IsEditMode = isListProductEditMode.FirstOrDefault(item => item.Id == data.Id).IsEditMode;
-                    control.ProductCardEvent += ProductCardEventHandler;
-                }
-            }
+            //    if (control != null)
+            //    {
+            //        control.Product = data;
+            //        control.IsEditMode = isListProductEditMode
+            //            .FirstOrDefault(item => item.Id == data.Id)
+            //            .IsEditMode;
+            //        control.ProductCardEvent += ProductCardEventHandler;
+            //    }
+            //}
         }
 
         private void ProductCardEventHandler(object sender, ProductCardEventArgs e)
         {
-            var productCard = (TwoWayProductCard)sender;
+            //var productCard = (TwoWayProductCard)sender;
 
-            switch (e.EventType)
-            {
-                case ProductCardEventType.Save:
-                    break;
-                case ProductCardEventType.Cancel:
-                    break;
-                case ProductCardEventType.Edit:
-                    break;
-                default:
-                    break;
-            }
+            //switch (e.EventType)
+            //{
+            //    case ProductCardEventType.Save:
+            //        break;
+            //    case ProductCardEventType.Cancel:
+            //        break;
+            //    case ProductCardEventType.Edit:
+            //        break;
+            //    default:
+            //        break;
+            //}
         }
     }
 }

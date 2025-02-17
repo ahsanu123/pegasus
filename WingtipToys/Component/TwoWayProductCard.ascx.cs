@@ -14,6 +14,7 @@ namespace WingtipToys.CustomControl
         Save,
         Edit,
         Cancel,
+        Delete,
     }
 
     public class ProductCardEventArgs : EventArgs
@@ -53,7 +54,7 @@ namespace WingtipToys.CustomControl
 
                     NameInput.Value = value.Name;
                     DescriptionInput.Value = value.Description;
-                    TypeInput.Value = value.Type;   
+                    TypeInput.Value = value.Type;
                     ImageUrlInput.Value = value.ImageUrl;
                     UnitPriceInput.Value = value.UnitPrice.ToString();
                 }

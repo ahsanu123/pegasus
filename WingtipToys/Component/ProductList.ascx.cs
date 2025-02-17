@@ -1,11 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.WebPages;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using WingtipToys.Helper;
 using WingtipToys.Models;
 
@@ -63,17 +59,25 @@ namespace WingtipToys.CustomControl
 
         protected void MainRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            int index = Convert.ToInt32(e.CommandArgument);
+            // int index = Convert.ToInt32(e.CommandArgument);
+            int index = e.Item.ItemIndex;
             string commandName = e.CommandName;
+            DebugLabel.Text = index.ToString();
 
             if (commandName == "Edit")
             {
-                DebugLabel.Text = "Edit";
-                _editIndex = index;
+                // _editIndex = index;
             }
             else if (commandName == "Delete")
             {
-                DebugLabel.Text = "Delete";
+                _editIndex = null;
+            }
+            else if (commandName == "Save")
+            {
+                _editIndex = null;
+            }
+            else if (commandName == "Cancel")
+            {
                 _editIndex = null;
             }
 

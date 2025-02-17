@@ -489,7 +489,6 @@
     <Compile Include="Component\Message.cs" />
     <Compile Include="Component\Shared\ProductCard.ascx.cs">
       <DependentUpon>ProductCard.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Component\Shared\ProductCard.ascx.designer.cs">
       <DependentUpon>ProductCard.ascx</DependentUpon>
@@ -597,6 +596,7 @@
     </Compile>
     <Compile Include="Logic\AddProducts.cs" />
     <Compile Include="Logic\ExceptionUtility.cs" />
+    <Compile Include="State\PageState.cs" />
     <Compile Include="Utility\HelperMethod.cs" />
     <Content Include="Logic\PayPalFunctions.cs.txt" />
     <Compile Include="Logic\RoleActions.cs" />

@@ -27,9 +27,22 @@
         runat="server">
 
         <ContentTemplate>
-            <controls:ProductList 
+            <asp:Repeater 
+                ID="MainRepeater"
+                ItemType="WingtipToys.Models.Product"
+                runat="server">
+
+                <ItemTemplate>
+                    <controls:ProductCard 
+                        IsEditMode="<%# Item.Id == State.EditModeIndex %>"
+                        Product="<%# Item %>"
+                        runat="server"/>
+                </ItemTemplate>
+
+            </asp:Repeater>
+<%--            <controls:ProductList 
                 ID="ProductList"
-                runat="server"/>
+                runat="server"/>--%>
         </ContentTemplate>
 
     </asp:UpdatePanel>

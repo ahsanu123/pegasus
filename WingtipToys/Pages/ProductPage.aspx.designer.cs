@@ -24,12 +24,12 @@ namespace WingtipToys
         protected global::System.Web.UI.UpdatePanel Updatepanel;
 
         /// <summary>
-        /// ProductList control.
+        /// MainRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::WingtipToys.CustomControl.ProductList ProductList;
+        protected global::System.Web.UI.WebControls.Repeater MainRepeater;
     }
 }
