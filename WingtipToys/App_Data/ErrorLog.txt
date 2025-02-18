@@ -4332,3 +4332,1847 @@ Stack Trace:
    at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
 
+********** 18/02/2025 08:59:58 **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: The Update method can only be called on UpdatePanel with ID 'Updatepanel' when UpdateMode is set to Conditional.
+Inner Source: System.Web.Extensions
+Inner Stack Trace: 
+   at System.Web.UI.UpdatePanel.Update()
+   at WingtipToys.ProductPage.OnPageStateUpdated(String key, IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 52
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 42
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_vj0wllnt.6.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:00:45 **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: The Update method can only be called on UpdatePanel with ID 'Updatepanel' when UpdateMode is set to Conditional.
+Inner Source: System.Web.Extensions
+Inner Stack Trace: 
+   at System.Web.UI.UpdatePanel.Update()
+   at WingtipToys.ProductPage.OnPageStateUpdated(String key, IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 52
+   at System.Action`2.Invoke(T1 arg1, T2 arg2)
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 42
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_ofj2xr52.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:00:52 **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: The Update method can only be called on UpdatePanel with ID 'Updatepanel' when UpdateMode is set to Conditional.
+Inner Source: System.Web.Extensions
+Inner Stack Trace: 
+   at System.Web.UI.UpdatePanel.Update()
+   at WingtipToys.ProductPage.OnPageStateUpdated(String key, IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 52
+   at System.Action`2.Invoke(T1 arg1, T2 arg2)
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 42
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_ofj2xr52.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:05:52 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 40
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_ogemq55k.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:13 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:13 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:14 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:14 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:14 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:22 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:22 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:22 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:22 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:23 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:23 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:23 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:23 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:23 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:24 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:24 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:24 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:24 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 09:42:26 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ApplicationState.PageState.SetState(IPageStateBase stateBase) in D:\project\2025\wingtip\WingtipToys\State\PageState.cs:line 18
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_gbw3xmkq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 10:09:29 **********
+Inner Exception Type: System.InvalidCastException
+Inner Exception: Unable to cast object of type 'WingtipToys.Models.Product' to type 'WingtipToys.CustomControl.ProductCard'.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.Helper.HelperFunction.GetRepeaterDataItem[T](RepeaterItemEventArgs args) in D:\project\2025\wingtip\WingtipToys\Utility\HelperMethod.cs:line 80
+   at WingtipToys.ProductPage.ProductRepeaterOnItemDataBound(Object sender, RepeaterItemEventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 92
+   at System.Web.UI.WebControls.Repeater.OnItemDataBound(RepeaterItemEventArgs e)
+   at System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   at System.Web.UI.WebControls.Repeater.AddDataItemsIntoItemsArray(IEnumerable dataSource, Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.PostGetDataAction(IEnumerable dataSource)
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   at WingtipToys.ProductPage.BindMainRepeater() in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 69
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 44
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_cqeeihle.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 10:11:00 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ProductPage.ProductRepeaterOnItemDataBound(Object sender, RepeaterItemEventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 93
+   at System.Web.UI.WebControls.Repeater.OnItemDataBound(RepeaterItemEventArgs e)
+   at System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   at System.Web.UI.WebControls.Repeater.AddDataItemsIntoItemsArray(IEnumerable dataSource, Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.PostGetDataAction(IEnumerable dataSource)
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   at WingtipToys.ProductPage.BindMainRepeater() in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 69
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 44
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_wv2rlmta.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 10:13:57 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ProductPage.ProductRepeaterOnItemDataBound(Object sender, RepeaterItemEventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 96
+   at System.Web.UI.WebControls.Repeater.OnItemDataBound(RepeaterItemEventArgs e)
+   at System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   at System.Web.UI.WebControls.Repeater.AddDataItemsIntoItemsArray(IEnumerable dataSource, Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.PostGetDataAction(IEnumerable dataSource)
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   at WingtipToys.ProductPage.BindMainRepeater() in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 69
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 44
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_nfyhe4sp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 11:04:38 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_0iqklqc0.6.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 11:04:38 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_0iqklqc0.6.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 11:04:38 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 56
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_0iqklqc0.6.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:40:34 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 37
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_y2vakvg0.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:41:50 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: App_Web_05v4mdd5
+Inner Stack Trace: 
+   at ASP.component_shared_productcard_ascx.__DataBind__control3(Object sender, EventArgs e) in d:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx:line 20
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   at System.Web.UI.WebControls.Repeater.AddDataItemsIntoItemsArray(IEnumerable dataSource, Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.PostGetDataAction(IEnumerable dataSource)
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   at WingtipToys.ProductPage.BindMainRepeater() in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 51
+   at WingtipToys.ProductPage.Page_Load(Object sender, EventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 39
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_ickzusul.5.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:43:18 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_upafwyyj.5.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:43:19 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_upafwyyj.5.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:43:19 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_upafwyyj.5.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:43:20 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_upafwyyj.5.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:33 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:34 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:34 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:34 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:35 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:35 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:35 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:35 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:35 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:35 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:36 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:36 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:36 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:44:36 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hrt0hagq.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:18 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:18 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:19 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:19 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:19 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:19 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:20 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:20 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:20 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:25 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:45:31 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 45
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_tkgo5exk.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:50:42 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_yljuvpiw.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:50:43 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_yljuvpiw.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:50:43 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_yljuvpiw.3.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:51:55 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_hegnqirc.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:53:14 **********
+Inner Exception Type: System.InvalidCastException
+Inner Exception: Specified cast is not valid.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ProductPage.MainRepeaterItemCommand(Object source, RepeaterCommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 88
+   at System.Web.UI.WebControls.Repeater.OnItemCommand(RepeaterCommandEventArgs e)
+   at System.Web.UI.WebControls.Repeater.OnBubbleEvent(Object sender, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.RepeaterItem.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_qj1vd13z.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:53:19 **********
+Inner Exception Type: System.InvalidCastException
+Inner Exception: Specified cast is not valid.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.ProductPage.MainRepeaterItemCommand(Object source, RepeaterCommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Pages\ProductPage.aspx.cs:line 88
+   at System.Web.UI.WebControls.Repeater.OnItemCommand(RepeaterCommandEventArgs e)
+   at System.Web.UI.WebControls.Repeater.OnBubbleEvent(Object sender, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.RepeaterItem.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_qj1vd13z.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:57:52 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_5nrwfpwx.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:57:53 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_5nrwfpwx.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 14:57:57 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_5nrwfpwx.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:01:18 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_2okmjcrb.9.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:10:57 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_u1sbnr5f.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:16:59 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_pprwph4j.9.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:03 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:10 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:11 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:11 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:12 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:12 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:12 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 18/02/2025 15:19:13 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: WingtipToys
+Inner Stack Trace: 
+   at WingtipToys.CustomControl.ProductCard.HandleButtonClicked(Object sender, CommandEventArgs e) in D:\project\2025\wingtip\WingtipToys\Component\Shared\ProductCard.ascx.cs:line 46
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_productpage_aspx.ProcessRequest(HttpContext context) in c:\Users\PALADOR-L10\AppData\Local\Temp\Temporary ASP.NET Files\vs\db06cd8a\d1421f68\App_Web_novzzw4h.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+

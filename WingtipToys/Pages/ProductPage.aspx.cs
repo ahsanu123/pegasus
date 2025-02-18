@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Autofac;
@@ -18,8 +17,8 @@ namespace WingtipToys
     public class ProductPageState : IPageStateBase
     {
         public string Id { get; set; } = nameof(ProductPageState);
-        public IEnumerable<Product> Products { get; set; }
-        public int? EditModeIndex { get; set; } = null;
+        public IEnumerable<Product> Products { get; set; } = Enumerable.Empty<Product>();
+        public int? EditModeId { get; set; } = null;
     }
 
     public class IsEditModeProduct
@@ -31,40 +30,24 @@ namespace WingtipToys
     public partial class ProductPage : Page
     {
         private IProductRepository _productRepo { get; set; }
-        public ProductPageState State { get; set; } = new ProductPageState();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                PageState.Subscribe(nameof(ProductPageState), this.OnPageStateUpdated);
-
-                State.Products = GetProductData();
-                PageState.SetState(State);
+                AppState.ProductPageState.Products = GetProductData();
                 BindMainRepeater();
             }
         }
 
-        protected override void OnUnload(EventArgs e)
-        {
-            base.OnUnload(e);
-            PageState.Unsubscribe(nameof(ProductPageState));
-        }
-
         public void OnPageStateUpdated(IPageStateBase stateBase)
         {
-            DebugLabel.Text = JsonConvert.SerializeObject(
-                PageState.GetState<ProductPageState>(nameof(ProductPageState))
-            );
-
-            State = (ProductPageState)stateBase;
-
             BindMainRepeater();
         }
 
         private void BindMainRepeater()
         {
-            MainRepeater.DataSource = State.Products;
+            MainRepeater.DataSource = AppState.ProductPageState.Products;
             MainRepeater.DataBind();
         }
 
@@ -93,29 +76,42 @@ namespace WingtipToys
 
                 if (productCard != null)
                 {
-                    productCard.Product = product;
-
-                    var pageState = PageState.GetState<ProductPageState>(nameof(ProductPageState));
-                    productCard.IsEditMode = product.Id % 2 == 0;
+                    productCard.ItemCommandHandler -= UpdateSomething;
+                    productCard.ItemCommandHandler += UpdateSomething;
                 }
             }
         }
 
-        private void ProductCardEventHandler(object sender, ProductCardEventArgs e)
+        protected void UpdateSomething(object sender, EventArgs e)
         {
-            //var productCard = (TwoWayProductCard)sender;
+            DebugLabel.Text = "Got And Event";
+        }
 
-            //switch (e.EventType)
-            //{
-            //    case ProductCardEventType.Save:
-            //        break;
-            //    case ProductCardEventType.Cancel:
-            //        break;
-            //    case ProductCardEventType.Edit:
-            //        break;
-            //    default:
-            //        break;
-            //}
+        protected void MainRepeaterItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            var commandName = e.CommandName;
+            var idArg = Convert.ToInt32(e.CommandArgument);
+            DebugLabel.Text = commandName + idArg.ToString();
+
+            switch (commandName)
+            {
+                case ProductCardItemCommandArgs.Edit:
+                    AppState.ProductPageState.EditModeId = idArg;
+                    break;
+
+                case ProductCardItemCommandArgs.Save:
+                    break;
+
+                case ProductCardItemCommandArgs.Cancel:
+                    AppState.ProductPageState.EditModeId = null;
+                    break;
+
+                case ProductCardItemCommandArgs.Delete:
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }

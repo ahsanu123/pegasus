@@ -51,11 +51,9 @@
     <div class="product-card">
 
         <div>
-            <h4>Its Edit Panel</h4>
-            <img 
-                alt="<%#: Product.Name %>"
-                src="<%#: Product.ImageUrl %>"
-                />
+            <h4>
+                <b><%#: Product.Name %></b>
+            </h4>
         </div>
         <div>
             <sub><%#: Product.Type %></sub>

@@ -10,6 +10,10 @@ namespace WingtipToys.ApplicationState
         string Id { get; set; }
     }
 
+    public static class AppState{
+        public static ProductPageState ProductPageState {get;set;} = new ProductPageState();
+    }
+
     public static class PageState
     {
         private static Dictionary<string, Action<IPageStateBase>> _subscriber;

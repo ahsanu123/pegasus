@@ -16,7 +16,7 @@ namespace WingtipToys.CustomControl
 
     public partial class ProductCard : UserControl
     {
-        public event CommandEventHandler ItemCommandHandler;
+        public event EventHandler ItemCommandHandler;
         public Product Product { get; set; }
         public bool IsEditMode { get; set; }
 
@@ -42,33 +42,8 @@ namespace WingtipToys.CustomControl
 
         protected void HandleButtonClicked(object sender, CommandEventArgs e)
         {
-            int.TryParse(e.CommandArgument.ToString(), out int commandArgument);
-
-            var pageState = new ProductPageState();
-            pageState = PageState.GetState<ProductPageState>(nameof(ProductPageState));
-
-            switch (e.CommandName)
-            {
-                case ProductCardItemCommandArgs.Save:
-
-                    break;
-                case ProductCardItemCommandArgs.Edit:
-                    pageState.EditModeIndex = commandArgument;
-                    PageState.SetState(pageState);
-
-                    break;
-                case ProductCardItemCommandArgs.Cancel:
-                    pageState.EditModeIndex = null;
-                    PageState.SetState(pageState);
-
-                    break;
-                case ProductCardItemCommandArgs.Delete:
-
-                    break;
-                default:
-
-                    break;
-            }
+            DebugLabel.Text = e.CommandName + Convert.ToInt32(e.CommandArgument);
+            ItemCommandHandler.Invoke(this, EventArgs.Empty);
         }
     }
 }
