@@ -44,17 +44,23 @@ namespace WingtipToys.CustomControl
         {
             int.TryParse(e.CommandArgument.ToString(), out int commandArgument);
 
+            var pageState = new ProductPageState();
+            pageState = PageState.GetState<ProductPageState>(nameof(ProductPageState));
+
             switch (e.CommandName)
             {
                 case ProductCardItemCommandArgs.Save:
 
                     break;
                 case ProductCardItemCommandArgs.Edit:
-                    var pageState = PageState.GetState<ProductPageState>(nameof(ProductPageState));
                     pageState.EditModeIndex = commandArgument;
                     PageState.SetState(pageState);
+
                     break;
                 case ProductCardItemCommandArgs.Cancel:
+                    pageState.EditModeIndex = null;
+                    PageState.SetState(pageState);
+
                     break;
                 case ProductCardItemCommandArgs.Delete:
 

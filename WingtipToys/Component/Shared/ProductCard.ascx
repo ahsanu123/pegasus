@@ -6,6 +6,9 @@
 
 <%@ Import Namespace="WingtipToys.CustomControl" %>
 
+<asp:Label 
+    ID="DebugLabel"
+    runat="server"/>
 
 <asp:Panel
     ID="PreviewPanel"

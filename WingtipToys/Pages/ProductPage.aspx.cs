@@ -5,6 +5,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Autofac;
+using Newtonsoft.Json;
 using WingtipToys.ApplicationState;
 using WingtipToys.CustomControl;
 using WingtipToys.Helper;
@@ -30,13 +31,13 @@ namespace WingtipToys
     public partial class ProductPage : Page
     {
         private IProductRepository _productRepo { get; set; }
-        public ProductPageState State {  get; set; } = new ProductPageState();
+        public ProductPageState State { get; set; } = new ProductPageState();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                PageState.StateChange += OnPageStateUpdated;
+                PageState.Subscribe(nameof(ProductPageState), this.OnPageStateUpdated);
 
                 State.Products = GetProductData();
                 PageState.SetState(State);
@@ -44,18 +45,27 @@ namespace WingtipToys
             }
         }
 
-        protected void OnPageStateUpdated(string key, IPageStateBase stateBase)
+        protected override void OnUnload(EventArgs e)
         {
-            if(key == nameof(ProductPageState))
-            {
-                Updatepanel.Update();
-            }
+            base.OnUnload(e);
+            PageState.Unsubscribe(nameof(ProductPageState));
+        }
+
+        public void OnPageStateUpdated(IPageStateBase stateBase)
+        {
+            DebugLabel.Text = JsonConvert.SerializeObject(
+                PageState.GetState<ProductPageState>(nameof(ProductPageState))
+            );
+
+            State = (ProductPageState)stateBase;
+
+            BindMainRepeater();
         }
 
         private void BindMainRepeater()
         {
             MainRepeater.DataSource = State.Products;
-            MainRepeater.DataBind(); 
+            MainRepeater.DataBind();
         }
 
         public ProductPage()
@@ -76,22 +86,19 @@ namespace WingtipToys
 
         protected void ProductRepeaterOnItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            //if (e.IsRepeaterItem())
-            //{
-            //    var data = e.GetRepeaterDataItem<Product>();
-            //    var control = e.FindControlAs<TwoWayProductCard>("twoWayProductCard");
-            //    var isListProductEditMode =
-            //        (IEnumerable<IsEditModeProduct>)Session[_listProductIsEditMode];
+            if (e.IsRepeaterItem())
+            {
+                var product = e.GetRepeaterDataItem<Product>();
+                var productCard = e.FindControlAs<ProductCard>("ProductCard");
 
-            //    if (control != null)
-            //    {
-            //        control.Product = data;
-            //        control.IsEditMode = isListProductEditMode
-            //            .FirstOrDefault(item => item.Id == data.Id)
-            //            .IsEditMode;
-            //        control.ProductCardEvent += ProductCardEventHandler;
-            //    }
-            //}
+                if (productCard != null)
+                {
+                    productCard.Product = product;
+
+                    var pageState = PageState.GetState<ProductPageState>(nameof(ProductPageState));
+                    productCard.IsEditMode = product.Id % 2 == 0;
+                }
+            }
         }
 
         private void ProductCardEventHandler(object sender, ProductCardEventArgs e)

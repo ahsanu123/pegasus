@@ -15,6 +15,9 @@
     <h2>
       Product  page
     </h2>   
+    <asp:Label 
+        ID="DebugLabel"
+        runat="server"/>
 
     <asp:Button
         OnClick="HandleOnAddProduct"
@@ -29,12 +32,12 @@
         <ContentTemplate>
             <asp:Repeater 
                 ID="MainRepeater"
+                OnItemDataBound="ProductRepeaterOnItemDataBound"
                 ItemType="WingtipToys.Models.Product"
                 runat="server">
 
                 <ItemTemplate>
                     <controls:ProductCard 
-                        IsEditMode="<%# Item.Id == State.EditModeIndex %>"
                         Product="<%# Item %>"
                         runat="server"/>
                 </ItemTemplate>
