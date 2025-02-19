@@ -1,9 +1,10 @@
 ﻿<%@ Page 
-    Title="About" 
+    Title="Product Page" 
     Language="C#" 
     MasterPageFile="~/Site.Master" 
     AutoEventWireup="true" 
     CodeBehind="ProductPage.aspx.cs" 
+    EnableEventValidation="false" 
     Inherits="WingtipToys.ProductPage" %>
 
 
@@ -15,9 +16,6 @@
     <h2>
       Product  page
     </h2>   
-    <asp:Label 
-        ID="DebugLabel"
-        runat="server"/>
 
     <asp:Button
         OnClick="HandleOnAddProduct"
@@ -30,6 +28,10 @@
         runat="server">
 
         <ContentTemplate>
+            <asp:Label 
+                ID="DebugLabel"
+                runat="server"/>
+
             <asp:Repeater 
                 ID="MainRepeater"
                 OnItemDataBound="ProductRepeaterOnItemDataBound"
@@ -38,34 +40,18 @@
 
                 <ItemTemplate>
                     <controls:ProductCard 
+                        ID="ProductCard"
                         Product="<%# Item %>"
                         runat="server"/>
                 </ItemTemplate>
 
             </asp:Repeater>
-<%--            <controls:ProductList 
-                ID="ProductList"
-                runat="server"/>--%>
         </ContentTemplate>
 
+<%--        <Triggers>
+            <asp:AsyncPostBackTrigger ControlID="MainRepeater" EventName="ItemCommand"/>
+        </Triggers>--%>
+
     </asp:UpdatePanel>
-
-    <div class="product-container">
-<%--        <asp:Repeater
-            ID="ProductRepeater"
-            ItemType="WingtipToys.Models.Product"
-            OnItemDataBound="ProductRepeaterOnItemDataBound"
-            runat="server">
-
-            <ItemTemplate>
-                <controls:TwoWayProductCard 
-                    ID="twoWayProduct"Card"
-                    Product="<%# Item %>"
-                    runat="server"/>
-            </ItemTemplate>
-
-        </asp:Repeater>--%>
-    </div>
-
 
 </asp:Content>

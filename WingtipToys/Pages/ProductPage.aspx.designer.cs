@@ -15,15 +15,6 @@ namespace WingtipToys
     {
 
         /// <summary>
-        /// DebugLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DebugLabel;
-
-        /// <summary>
         /// Updatepanel control.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace WingtipToys
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel Updatepanel;
+
+        /// <summary>
+        /// DebugLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DebugLabel;
 
         /// <summary>
         /// MainRepeater control.

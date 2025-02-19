@@ -36,8 +36,8 @@ namespace WingtipToys
             if (!IsPostBack)
             {
                 AppState.ProductPageState.Products = GetProductData();
-                BindMainRepeater();
             }
+            BindMainRepeater();
         }
 
         public void OnPageStateUpdated(IPageStateBase stateBase)
@@ -71,9 +71,7 @@ namespace WingtipToys
         {
             if (e.IsRepeaterItem())
             {
-                var product = e.GetRepeaterDataItem<Product>();
-                var productCard = e.FindControlAs<ProductCard>("ProductCard");
-
+                var productCard = (ProductCard)e.Item.FindControl("ProductCard");
                 if (productCard != null)
                 {
                     productCard.ItemCommandHandler -= UpdateSomething;
@@ -82,9 +80,10 @@ namespace WingtipToys
             }
         }
 
-        protected void UpdateSomething(object sender, EventArgs e)
+        protected void UpdateSomething(object sender, ProductCardEventArg e)
         {
-            DebugLabel.Text = "Got And Event";
+            throw new Exception("Hello");
+            DebugLabel.Text = "Hello";
         }
 
         protected void MainRepeaterItemCommand(object source, RepeaterCommandEventArgs e)

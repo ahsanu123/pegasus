@@ -17,7 +17,7 @@ namespace WingtipToys.CustomControl
         Delete,
     }
 
-    public class ProductCardEventArgs : EventArgs
+    public class TwoWayProductCardEventArg : EventArgs
     {
         public int Id { get; set; }
         public ProductCardEventType EventType { get; set; }
@@ -27,7 +27,7 @@ namespace WingtipToys.CustomControl
     {
         private Product _product;
         public bool IsEditMode;
-        public event EventHandler<ProductCardEventArgs> ProductCardEvent;
+        public event EventHandler<TwoWayProductCardEventArg> ProductCardEvent;
 
         [Bindable(true)]
         public Product Product
@@ -82,7 +82,7 @@ namespace WingtipToys.CustomControl
         protected void HandleOnSave(object sender, EventArgs e)
         {
             //_setMode(false);
-            var args = new ProductCardEventArgs
+            var args = new TwoWayProductCardEventArg
             {
                 Id = Product.Id,
                 EventType = ProductCardEventType.Save,
@@ -93,7 +93,7 @@ namespace WingtipToys.CustomControl
         protected void HandleOnEdit(object sender, EventArgs e)
         {
             //_setMode(true);
-            var args = new ProductCardEventArgs
+            var args = new TwoWayProductCardEventArg
             {
                 Id = Product.Id,
                 EventType = ProductCardEventType.Edit,
@@ -104,7 +104,7 @@ namespace WingtipToys.CustomControl
         protected void HandleOnCancel(object sender, EventArgs e)
         {
             //_setMode(false);
-            var args = new ProductCardEventArgs
+            var args = new TwoWayProductCardEventArg
             {
                 Id = Product.Id,
                 EventType = ProductCardEventType.Cancel,

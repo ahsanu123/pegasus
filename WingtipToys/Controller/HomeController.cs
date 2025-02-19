@@ -2,8 +2,5 @@ using System.Web.Mvc;
 
 namespace WingtipToys.ViewController
 {
-    public class HomeController : Controller
-    {
-
-    }
+    public class HomeController : Controller { }
 }

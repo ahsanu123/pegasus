@@ -6,6 +6,11 @@ using WingtipToys.Models;
 
 namespace WingtipToys.CustomControl
 {
+    public class ProductCardEventArg : EventArgs
+    {
+        public string Data { get; set; }
+    }
+
     public static class ProductCardItemCommandArgs
     {
         public const string Save = "Save";
@@ -16,7 +21,7 @@ namespace WingtipToys.CustomControl
 
     public partial class ProductCard : UserControl
     {
-        public event EventHandler ItemCommandHandler;
+        public event EventHandler<ProductCardEventArg> ItemCommandHandler;
         public Product Product { get; set; }
         public bool IsEditMode { get; set; }
 
@@ -42,8 +47,12 @@ namespace WingtipToys.CustomControl
 
         protected void HandleButtonClicked(object sender, CommandEventArgs e)
         {
-            DebugLabel.Text = e.CommandName + Convert.ToInt32(e.CommandArgument);
-            ItemCommandHandler.Invoke(this, EventArgs.Empty);
+            var message = e.CommandName + Convert.ToInt32(e.CommandArgument);
+            var eventArg = new ProductCardEventArg { Data = message };
+
+            if (ItemCommandHandler != null)
+                ItemCommandHandler.Invoke(this, eventArg);
+            else DebugLabel.Text = "Item Handler was NULL!!";
         }
     }
 }
